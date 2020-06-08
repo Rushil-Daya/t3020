@@ -1,5 +1,4 @@
 import unittest
-
 import datamunger
 
 #from datamunger.datamunger import *
@@ -22,5 +21,4 @@ class TestDatamunger(unittest.TestCase) :
 
 
 if __name__ == "__main__":
-
-    unittest.main()
+	unittest.main()
