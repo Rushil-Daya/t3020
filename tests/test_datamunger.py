@@ -1,5 +1,8 @@
 import unittest
+
 import datamunger
+
+#from datamunger.datamunger import *
 
 class TestDatamunger(unittest.TestCase) :
 
@@ -10,11 +13,14 @@ class TestDatamunger(unittest.TestCase) :
         self.assertEqual(cal,total)
 
     def test_checkRow(self):
-        arrTemp= [10,9,7,6,4,3,2]
-        self.assertEqual(datamunger.check_row(1,[],arrTemp), False)
+        arrTemp= [10,9,7,6,4,3,2]    #create a temporary array with missing values
+        # use this array with missing values and if the original code works it should return false
+        result = datamunger.check_row(1,[],arrTemp)
+        self.assertEqual(result,False)
 
     
 
 
 if __name__ == "__main__":
+
     unittest.main()
