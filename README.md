@@ -1,7 +1,7 @@
 
 # T3020   Repo for ELEN3020
 
-Name: Rushil Daya 1830490
+Name: Rushil Daya 1830490, Scott Hazelhurst
 Date: 7 June
 
 
