@@ -17,7 +17,7 @@ origin=sys.argv[1]
 
 def calc_total(curr):
     computed=0
-    for c in curr[1:8]:    
+    for c in curr[1:8]:    #the array indexing was changed
         computed=computed+c
     return computed
 
@@ -26,7 +26,7 @@ def check_monotonic(prev,curr):
    # Now check monotonicity and update  prev so next time round we compare
    # against this row
     for i in range(9):
-        if curr[i] < prev[i]:  
+        if curr[i] < prev[i]:   # equals to sign was removed as values equal values should not be an monotonic error
             print("Monotonic error at column %d comparing lines %d and %d  "%(i,n-1,n),
                      "values %d and %d"%(curr[i],prev[i]))
         prev[i]=curr[i]  
@@ -35,7 +35,7 @@ def check_monotonic(prev,curr):
 def check_row(n, prev, curr_str):
     data = []
     curr = []
-    for d in curr_str[0:9]:    
+    for d in curr_str[0:9]:    #array indexing was added
         try:
             v = int(d)
             curr.append(v)
