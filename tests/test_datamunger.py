@@ -12,9 +12,9 @@ class TestDatamunger(unittest.TestCase) :
         self.assertEqual(cal,total)
 
     def test_checkRow(self):
-        arrTemp= [10,9,7,6,4,3,2]    #create a temporary array with missing values
-        # use this array with missing values and if the original code works it should return false
-        result = datamunger.check_row(1,[],arrTemp)
+        arrTemp= [10,9,7,6,'',4,3,2,'',0]    #create a temporary array with missing values  then use this array with missing values and if the original code works it should return false
+        prev = [0,1,2,3,4,5,6,7,8,9]
+        result = datamunger.check_row(1,prev,arrTemp)
         self.assertEqual(result,False)
 
     
