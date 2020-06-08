@@ -20,3 +20,7 @@ Note, however, there is some missing data in some of the rows. The first few lin
 ### Errors
 
 There are three deliberate errors, marked E1, E2 and E3. Finding other (non-deliberate and unknown to me)  errors will get a bonus -- clearly add below this line in your copy of the README what the errors are and how you fixed them.
+
+### Running of unittest
+
+To run the unittest, open the terminal from the parent directory (t3020) and enter in the following command: python3 -m unittest tests/test_datamunger.py
