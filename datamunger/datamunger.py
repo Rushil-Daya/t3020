@@ -17,7 +17,7 @@ origin=sys.argv[1]
 
 def calc_total(curr):
     computed=0
-    for c in curr[1:8]:    #the array indexing was changed
+    for c in curr[1:9]:    #the array indexing was changed
         computed=computed+c
     return computed
 

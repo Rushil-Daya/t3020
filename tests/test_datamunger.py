@@ -6,8 +6,8 @@ import datamunger
 class TestDatamunger(unittest.TestCase) :
 
     def test_calcTotal(self):
-        arrayTemp= [10,9,8,7,6,5,4,3,2]     #create a temporary array which represents a link from the .csv file
-        total=44                               #this is the correct total (adding T1 throught T8)
+        arrayTemp = [0,1,2,3,4,5,6,7,8,9]   #create a temporary array which represents a line from the .csv file
+        total=36                              #this is the correct total (adding T1 throught T8)
         cal = datamunger.calc_total(arrayTemp)
         self.assertEqual(cal,total)
 
