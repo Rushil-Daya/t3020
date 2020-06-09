@@ -25,7 +25,7 @@ def calc_total(curr):
 def check_monotonic(prev,curr):
    # Now check monotonicity and update  prev so next time round we compare
    # against this row
-    for i in range(8):      #range value changed and realtional operators changed
+    for i in range(8):      #range value changed and relational operators changed
         if curr[i] < prev[i]:   
             print("Monotonic error at column %d comparing lines %d and %d  "%(i,n-1,n),
                      "values %d and %d"%(curr[i],prev[i]))
